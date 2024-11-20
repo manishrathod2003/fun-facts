@@ -1,38 +1,14 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+document.getElementById('generateFactBtn').addEventListener('click', generateRandomFact);
 
-.container {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+const facts = [
+    "Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.",
+    "Bananas are berries, but strawberries aren't.",
+    "A day on Venus is longer than a year on Venus.",
+    "Octopuses have three hearts.",
+    "The Eiffel Tower can be 15 cm taller during the summer."
+];
 
-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+function generateRandomFact() {
+    const randomIndex = Math.floor(Math.random() * facts.length);
+    document.getElementById('factDisplay').textContent = facts[randomIndex];
 }
-
-button:hover {
-    background-color: #0056b3;
-}
-
-p {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #333;
-}
-
