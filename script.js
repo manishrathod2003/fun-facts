@@ -1,11 +1,11 @@
 document.getElementById('generateFactBtn').addEventListener('click', generateRandomFact);
 
 const facts = [
-    "Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.",
-    "Bananas are berries, but strawberries aren't.",
-    "A day on Venus is longer than a year on Venus.",
-    "Octopuses have three hearts.",
-    "The Eiffel Tower can be 15 cm taller during the summer."
+    "I love hiking and have traveled to five national parks.",
+    "I am an avid reader and read around 20 books per year.",
+    "I once baked a 3-tiered cake for a family gathering!",
+    "I speak three languages fluently.",
+    "I’m learning to play the guitar in my free time."
 ];
 
 function generateRandomFact() {
